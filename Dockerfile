@@ -16,4 +16,5 @@ ADD conf/scrapyd.conf /etc/scrapyd/scrapyd.conf
 EXPOSE 6800
 #CMD ["service", "scrapy", "start"]
 
-CMD ["scrapyd"]
+#CMD ["scrapyd"]
+CMD ["scrapyd", "--logfile=/var/log/scrapyd.log", "--pidfile="]
