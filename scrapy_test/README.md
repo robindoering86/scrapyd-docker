@@ -1,5 +1,5 @@
-# Intro
-This is a demo scrapy project which can be deployed to a remote (or local) srapyd server. 
+# About
+This is a demo scrapy project which can be deployed to a remote (or local) srapyd server. It will make a couple of useless requests to httpbin.org and write the "scraped" data to the MongoDB database specified by the `MONGO_URI` parameter in scrapy_test/settings.cfg.
 
 ```bash
 python setup.py bdist_egg
