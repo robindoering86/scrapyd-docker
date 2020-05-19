@@ -10,11 +10,7 @@ RUN pip3 install virtualenv \
 WORKDIR /scrapy
 RUN pip3 install -r /tmp/requirements.txt && rm /tmp/requirements.txt
 ADD conf/scrapyd.conf /etc/scrapyd/scrapyd.conf
-#ADD scrapy.service /etc/systemd/system/scrapy.service
-#CMD systemctl enable scrapy.service
 
 EXPOSE 6800
-#CMD ["service", "scrapy", "start"]
 
-#CMD ["scrapyd"]
 CMD ["scrapyd", "--logfile=/var/log/scrapyd.log", "--pidfile="]
