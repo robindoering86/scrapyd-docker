@@ -6,7 +6,8 @@ RUN apt-get update \
   && apt-get install -y git \
   && apt-get clean
 RUN pip3 install virtualenv \
-  && pip3 install scrapyd
+  && pip3 install scrapyd \
+  && pip3 instll dotenv
 WORKDIR /scrapy
 RUN pip3 install -r /tmp/requirements.txt && rm /tmp/requirements.txt
 ADD conf/scrapyd.conf /etc/scrapyd/scrapyd.conf
