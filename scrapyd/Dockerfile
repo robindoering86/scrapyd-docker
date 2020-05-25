@@ -4,10 +4,8 @@ RUN apt-get update \
   && apt-get install python3-pip -y \
   && apt-get install -y systemd \
   && apt-get install -y git \
-  && apt-get clean
-RUN pip3 install virtualenv \
-  && pip3 install scrapyd \
-  && pip3 instll dotenv
+  && apt-get install -y python-dev libxml2-dev libxslt1-dev libffi-dev \
+  && apt-get clean 
 WORKDIR /scrapy
 RUN pip3 install -r /tmp/requirements.txt && rm /tmp/requirements.txt
 ADD conf/scrapyd.conf /etc/scrapyd/scrapyd.conf

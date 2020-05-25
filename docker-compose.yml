@@ -2,7 +2,7 @@ version: '3'
 
 services:
    scrapyd:
-     image: scrapyd
+     image: scrapyd:latest
      container_name: scrapyd
      env_file:
         - conf/scrapy.env
@@ -25,7 +25,7 @@ services:
      restart: always   
 
    scrapoxy:
-     image: scrapoxy_custom
+     image: scrapoxy_custom:latest
      env_file:
         - conf/scrapoxy.env
      container_name: scrapoxy
