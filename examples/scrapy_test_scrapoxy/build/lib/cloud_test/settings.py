@@ -106,7 +106,7 @@ ITEM_PIPELINES = {
 MONGO_USER = os.getenv('MONGO_USER')
 MONGO_PW = os.getenv('MONGO_PW')
 MONGO_DATABASE = os.getenv('MONGO_DATABASE')
-MONGO_URI = (f"mongodb+srv://{MONGO_USER}:{MONGO_PW}@cluster0-vshap.mongodb.net/csrdata?retryWrites=true&w=majority")
+MONGO_URI = f"mongodb+srv://{MONGO_USER}:{MONGO_PW}@cluster0-vshap.mongodb.net/csrdata?retryWrites=true&w=majority"
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 RETRY_TIMES = 0
 
