@@ -3,8 +3,9 @@ version: '3'
 services:
    scrapyd:
      image: scrapyd
-     
      container_name: scrapyd
+     restart: always
+
    reverse-proxy:
      image: nginx:alpine
      volumes:
@@ -16,5 +17,16 @@ services:
        - scrapyd
      ports:
        - 80:80    
-
+     restart: always   
      container_name: scrapyd-web
+
+   scrapoxy:
+     image: scrapoxy_custom
+     links:
+       - scrapyd
+     ports:
+       - 8888:8888
+       - 8889:8889
+     restart: always
+         
+
