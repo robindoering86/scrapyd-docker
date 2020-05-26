@@ -8,7 +8,6 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-import os
 
 BOT_NAME = 'cloud_test'
 
@@ -103,21 +102,16 @@ ITEM_PIPELINES = {
     'cloud_test.pipelines.MongoPipeline': 300,
 }
 
-MONGO_USER = os.getenv('MONGO_USER')
-MONGO_PW = os.getenv('MONGO_PW')
-MONGO_DATABASE = os.getenv('MONGO_DATABASE')
-MONGO_URI = (f"mongodb+srv://{MONGO_USER}:{MONGO_PW}@cluster0-vshap.mongodb.net/csrdata?retryWrites=true&w=majority")
+MONGO_USER = ''
+MONGO_PW = ''
+MONGO_DATABASE = ''
+MONGO_URI = ''
+
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 RETRY_TIMES = 0
 
 PROXY = os.getenv('PROXY')
-#PROXY = 'http://18.197.33.132:8888/?noconnect'
-#PROXY = 'http://localhost:8888/?noconnect'
-
 API_SCRAPOXY = os.getenv('API_SCRAPOXY')
-#API_SCRAPOXY = 'http://18.197.33.132:8889/api'
-#API_SCRAPOXY = 'http://localhost:8889/api'
-
 API_SCRAPOXY_PASSWORD = os.getenv('API_SCRAPOXY_PASSWORD')
 
 

@@ -104,8 +104,7 @@ ITEM_PIPELINES = {
     'cloud_test.pipelines.MongoPipeline': 300,
 }
 
-MONGO_USER = 'csr_admin'
-MONGO_PW = 'Pou9Ld48PtqRt8yG'
-MONGO_DATABASE = 'csrdata'
-MONGO_URI = (f"mongodb+srv://{MONGO_USER}:{MONGO_PW}"
-              "@cluster0-vshap.mongodb.net/csrdata?retryWrites=true&w=majority")
+MONGO_USER = ''
+MONGO_PW = ''
+MONGO_DATABASE = ''
+MONGO_URI = ''
