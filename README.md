@@ -80,3 +80,12 @@ Example `conf/scrapoxy.config.json` file:
     }
 }
 ```
+## Run the stack
+
+```bash
+docker-compose up -d
+```
+
+Scrapoxy should now be accessible using your EC2 instances public IP ("http://<YOUR_EC2_IP>:8889/"). Use the `API_SCRAPOXY_PASSWORD` password to login (if set).
+
+The proxy can now be used as standalone or (for web crawling) in conjunction with Scrapyd. Examples on how to use Scrapyd can be found in the `examples` folder.
