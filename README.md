@@ -31,7 +31,7 @@ Edit the `conf/scrapyd.env` file .
 
 ### Scrapoxy
 
-Edit the `conf/scrapoxy.config.json` files to your needs. It is preconfigured to be run with AWS EC2 in the EU-West1 region. If you need the proxy to run in a different region, see (https://scrapoxy.readthedocs.io/en/master/standard/providers/awsec2/copy_ami_to_region/index.html)[description] on how to copy the scrapoxy image to another region. 
+Edit the `conf/scrapoxy.config.json` files to your needs. It is preconfigured to be run with AWS EC2 in the EU-West1 region. If you need the proxy to run in a different region, see [description](https://scrapoxy.readthedocs.io/en/master/standard/providers/awsec2/copy_ami_to_region/index.html) on how to copy the scrapoxy image to another region. 
 
 You must edit the following parameter in the `conf/scrapoxy.config.json` file:
 
