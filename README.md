@@ -23,7 +23,7 @@ make build
 ### Scrapyd
 Edit the `scrapy.env` file .
 
-- `PROXY` parameter. If using the full stack, leave this at default value ("http://scrapoxy:8888/?nologin"). If you choose to password-protect your scrapoxy proxy, must be of the format ("http://<USER>:<PASSWORD>@scrapoxy:8888/?nologin")
+- `PROXY` parameter. If using the full stack, leave this at default value ("http://scrapoxy:8888/?noconnect"). If you choose to password-protect your scrapoxy proxy, must be of the format ("http://<USER>:<PASSWORD>@scrapoxy:8888/?noconnect")
 
 - `API_SCRAPOXY`: If using the full stack, leave this at default value. ("http://scrapoxy:8889/api")
 
