@@ -1,3 +1,0 @@
-[scrapy]
-settings = cloud_test.settings
-
