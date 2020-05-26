@@ -23,9 +23,9 @@ make build
 ### Scrapyd
 Edit the `conf/scrapyd.env` file .
 
-- `PROXY` parameter. If using the full stack, leave this at default value ("http://scrapoxy:8888/?noconnect"). If you choose to password-protect your scrapoxy proxy, must be of the format ("http://<USER>:<PASSWORD>@scrapoxy:8888/?noconnect")
+- `PROXY` parameter. If using the full stack, leave this at default value (`http://scrapoxy:8888/?noconnect`). If you choose to password-protect your scrapoxy proxy, must be of the format (`http://<USER>:<PASSWORD>@scrapoxy:8888/?noconnect`)
 
-- `API_SCRAPOXY`: If using the full stack, leave this at default value. ("http://scrapoxy:8889/api")
+- `API_SCRAPOXY`: If using the full stack, leave this at default value. (`http://scrapoxy:8889/api`)
 
 - `API_SCRAPOXY_PASSWORD`: The "commander" password set in scrapoxy config. Password to protect the access to the scrapoxy API
 
@@ -86,6 +86,6 @@ Example `conf/scrapoxy.config.json` file:
 docker-compose up -d
 ```
 
-Scrapoxy should now be accessible using your EC2 instances public IP (`http://<YOUR_EC2_IP>:8889/). Use the `API_SCRAPOXY_PASSWORD` password to login (if set).
+Scrapoxy should now be accessible using your EC2 instances public IP (`http://<YOUR_EC2_IP>:8889/`). Use the `API_SCRAPOXY_PASSWORD` password to login (if set).
 
 The proxy can now be used as standalone or (for web crawling) in conjunction with Scrapyd. Examples on how to use Scrapyd can be found in the `examples` folder.
