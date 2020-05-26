@@ -3,7 +3,7 @@ This is a demo scrapy project which can be deployed to a remote (or local) srapy
 
 If you want to use `scrapoxy`, you must also set the following variables in `examples/scrapy_test/settings.py`:
 
-- `PROXY`: If using the full stack, set this to "http://<username>:<password>@scrapoxy:8888/?noconnect", where `<username>` and `<password>` are the same as set in `conf/scrapoxy.conf.json`
+- `PROXY`: If using the full stack, set this to `http://<username>:<password>@scrapoxy:8888/?noconnect`, where `<username>` and `<password>` are the same as set in `conf/scrapoxy.conf.json`
 - `API_SCRAPOXY`: If using the full stack, set this to "http://scrapoxy:8889/api"
 - `API_SCRAPOXY_PASSWORD`: This is the "commander" password set in `conf/scrapoxy.conf.json`
 
