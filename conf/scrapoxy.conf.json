@@ -1,7 +1,7 @@
 {
     "commander": {
         "port": 8889,
-        "password": "default_pw"
+        "password": "DEFAULT_PW"
     },
     "instance": {
         "port": 3128,
@@ -13,12 +13,12 @@
     "providers": [
         {
             "type": "awsec2",
-            "accessKeyId": "YOUR ACCESS KEY ID",
-            "secretAccessKey": "YOUR SECRET ACCESS KEY",
+            "accessKeyId": "YOUR_AWS_ACCESS_KEY_ID",
+            "secretAccessKey": "YOUR_AWS_ACCESS_KEY",
             "region": "eu-west-1",
             "instance": {
-                "InstanceType": "t1.micro",
-                "ImageId": "ami-c74d0db4",
+                "InstanceType": "t2.micro",
+                "ImageId": "ami-485fbba5",
                 "SecurityGroups": [
                     "forward-proxy"
                 ]
@@ -28,8 +28,8 @@
     "proxy": {
         "port": 8888,
         "auth": {
-            "username": "default_user",
-            "password": "default_pw"
+            "username": "DEFAULT_USER",
+            "password": "DEFAULT_PW"
         }
     }
 }
