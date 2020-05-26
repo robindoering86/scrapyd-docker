@@ -63,8 +63,8 @@ Example `conf/scrapoxy.config.json` file:
             "secretAccessKey": "YOUR_AWS_ACCESS_KEY",
             "region": "eu-west-1",
             "instance": {
-                "InstanceType": "t1.micro",
-                "ImageId": "ami-c74d0db4",
+                "InstanceType": "t2.micro",
+                "ImageId": "ami-485fbba5",
                 "SecurityGroups": [
                     "forward-proxy"
                 ]
