@@ -15,7 +15,7 @@ python setup.py bdist_egg
 Create the project on the Scrapyd server.
 
 ```bash
-curl http://<USERNAME>:<PASSWORD>@<SCRAPYD_IP_OR_HOSTNAME>:<PORT>/addproject.json -F project=<SCRAPY_PROJECT_NAME> -F version=<VERSION_NO> -F egg=@dist/project-1.0-py3.7.egg
+curl http://<USERNAME>:<PASSWORD>@<SCRAPYD_IP_OR_HOSTNAME>:<PORT>/addversion.json -F project=<SCRAPY_PROJECT_NAME> -F version=<VERSION_NO> -F egg=@dist/project-1.0-py3.7.egg
 ```
 To schedule a spider run execute the following command:
 ```bash
