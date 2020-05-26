@@ -103,17 +103,14 @@ ITEM_PIPELINES = {
     'cloud_test.pipelines.MongoPipeline': 300,
 }
 
-MONGO_USER = 'csr_admin'
-MONGO_PW = 'Pou9Ld48PtqRt8yG'
-MONGO_DATABASE = 'csrdata'
-MONGO_URI = f'mongodb+srv://{MONGO_USER}:{MONGO_PW}@cluster0-vshap.mongodb.net/test?retryWrites=true&w=majority'
+MONGO_USER = ''
+MONGO_PW = ''
+MONGO_DATABASE = ''
+MONGO_URI = f''
 
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 RETRY_TIMES = 0
 
-PROXY = "http://test_ga:ga_test@scrapoxy:8888/?noconnect"
-API_SCRAPOXY = "http://scrapoxy:8889/?api"
-API_SCRAPOXY_PASSWORD = "ga_test"
-
-
-
+PROXY = ''
+API_SCRAPOXY = ''
+API_SCRAPOXY_PASSWORD = ''
