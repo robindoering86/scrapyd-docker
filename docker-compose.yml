@@ -5,7 +5,7 @@ services:
      image: scrapyd:latest
      container_name: scrapyd
      env_file:
-        - conf/scrapy.env
+        - conf/scrapyd.env
      restart: always
 
    reverse-proxy:
